@@ -25,7 +25,6 @@ public class AlertsPage {
     }
     public void acceptAlert(){
         wait.until(ExpectedConditions.alertIsPresent());
-        driver.switchTo().alert().sendKeys("as");
         driver.switchTo().alert().accept();
     }
     public String getSuccessMessage(){
